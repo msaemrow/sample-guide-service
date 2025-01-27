@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rates</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="rates.css" />
+
+    <!-- Google Calendar Appointment Scheduling -->
+    <link
+      href="https://calendar.google.com/calendar/scheduling-button-script.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://calendar.google.com/calendar/scheduling-button-script.js"
+      async
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm">
+        <a class="navbar-brand" href="home.html">Sample Guide Service</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="rates.html">Rates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="photos.html">Photos</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Guiding Rates</h1>
+      <p class="text-center">
+        We offer competitive rates for an unforgettable fishing experience.
+        Whether you're looking for a half-day adventure or a full day on the
+        water, we've got you covered. Click "Book Now" to schedule your
+        adventure!
+      </p>
+      <div class="container">
+        <div class="row g-4">
+          <section>
+            <h2>Open Water Fishing</h2>
+            <div class="d-flex flex-wrap justify-content-center">
+              <div class="card-wrapper">
+                <div class="card shadow-sm border-light me-3 ms-3">
+                  <img
+                    src="/lake-boat.JPG"
+                    class="card-img-top"
+                    alt="Half Day Trip"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Half Day Trip</h5>
+                    <p class="card-text">$350</p>
+                    <p>Up to 3 guests.</p>
+                    <p>Within 60 miles of [location]</p>
+                    <p>Start time of 8am or 4pm</p>
+                    <p>4 hours of fishing</p>
+                    <div id="google-calendar-button-1"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-wrapper">
+                <div class="card shadow-sm border-light">
+                  <img
+                    src="/lake-boat.JPG"
+                    class="card-img-top"
+                    alt="Full Day Trip"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Full Day Trip</h5>
+                    <p class="card-text">$650</p>
+                    <p>Up to 3 guests.</p>
+                    <p>Within 60 miles of [location]</p>
+                    <p>Start time of 8am</p>
+                    <p>8 hours of fishing</p>
+                    <div id="google-calendar-button-2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Ice Fishing</h2>
+            <div class="d-flex flex-wrap justify-content-center">
+              <div class="card-wrapper">
+                <div class="card shadow-sm border-light me-3 ms-3">
+                  <img
+                    src="/ice-fishing.JPG"
+                    class="card-img-top"
+                    alt="Ice Fishing Trip"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Half Day Trip</h5>
+                    <p class="card-text">$350</p>
+                    <p>
+                      Ice fishing for up to 3 guests, with an additional $75 per
+                      extra guest. Start time of 8 am or 1pm. 4 hours of guided
+                      fishing.
+                    </p>
+                    <div id="google-calendar-button-3"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-wrapper">
+                <div class="card shadow-sm border-light">
+                  <img
+                    src="/ice-fishing.JPG"
+                    class="card-img-top"
+                    alt="Ice Fishing Trip"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Full Day Trip</h5>
+                    <p class="card-text">$500</p>
+                    <p>
+                      Ice fishing for up to 3 guests, with an additional $75 per
+                      extra guest. Start time of 8 am. 8 hours of guided
+                      fishing.
+                    </p>
+                    <div id="google-calendar-button-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Email: demo@example.com</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>&copy; 2025 Demo Guide Service</p>
+    </footer>
+
+    <script>
+      // Ensure the buttons load in the correct locations
+      window.addEventListener("load", function () {
+        calendar.schedulingButton.load({
+          url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3kZgdMDFvZ3d9ZgBphP02ZUwf-5tb6UK271pNdWlC8K1mXyt2CjKgrUQQZZb8Nj3fW1wZhEyhA?gv=true",
+          color: "#0B8043",
+          label: "Book Now!",
+          target: document.getElementById("google-calendar-button-1"), // Target for button 1
+        });
+
+        calendar.schedulingButton.load({
+          url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3kZgdMDFvZ3d9ZgBphP02ZUwf-5tb6UK271pNdWlC8K1mXyt2CjKgrUQQZZb8Nj3fW1wZhEyhA?gv=true",
+          color: "#0B8043",
+          label: "Book Now!",
+          target: document.getElementById("google-calendar-button-2"), // Target for button 2
+        });
+
+        calendar.schedulingButton.load({
+          url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3kZgdMDFvZ3d9ZgBphP02ZUwf-5tb6UK271pNdWlC8K1mXyt2CjKgrUQQZZb8Nj3fW1wZhEyhA?gv=true",
+          color: "#0B8043",
+          label: "Book Now!",
+          target: document.getElementById("google-calendar-button-3"), // Target for button 3
+        });
+
+        calendar.schedulingButton.load({
+          url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3kZgdMDFvZ3d9ZgBphP02ZUwf-5tb6UK271pNdWlC8K1mXyt2CjKgrUQQZZb8Nj3fW1wZhEyhA?gv=true",
+          color: "#0B8043",
+          label: "Book Now!",
+          target: document.getElementById("google-calendar-button-4"), // Target for button 4
+        });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
