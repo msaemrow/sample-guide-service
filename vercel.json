@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/rates",
+      "destination": "/rates.html"
+    },
+    {
+      "source": "/photos",
+      "destination": "/photos.html"
+    }
+  ]
+}
